@@ -1,0 +1,164 @@
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho {
+	height: 80px;
+	background-color: #0b0b0b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 80px;
+	border-bottom: 1px solid #282828;
+}
+
+.cabecalho .logo {
+	display: flex;
+	gap: 15px;
+}
+
+.cabecalho .menu {
+	display: flex;
+	gap: 30px;
+}
+
+.cabecalho .menu li a {
+	padding: 30px;
+	color: #e8e8e8;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.cabecalho .menu li a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+main {
+  padding: 25px;
+}
+
+
+.destaques {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.banner {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.banner img {
+  width: auto;
+  height: 250px;
+}
+
+.banner a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #F04F69;
+  /* Adjust based on your color scheme */
+  display: block;
+  margin-top: 10px;
+}
+
+.catalogo {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.catalogo h2 {
+  margin-bottom: 10px;
+}
+
+.catalogo form {
+  display: auto;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.catalogo label {
+  margin-right: 20px;
+  width: 80px;
+  
+}
+
+
+.catalogo select,
+.catalogo input[type="number"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.catalogo button {
+  background-color: #F04F69;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.catalogo .jogos {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Jogo Card Styles */
+.jogo {
+  width: 25%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.jogo img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.jogo h2,
+.jogo p {
+  margin-bottom: 5px;
+}
+
+.jogo .avaliacao {
+  margin-bottom: 10px;
+}
+
+.jogo .avaliacao i {
+  color: #FFD700;
+}
+
+.jogo button {
+  background-color: #F04F69;
+  /* Adjust based on your color scheme */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #0b0b0b;
+  color: #fff;
+  text-align: center;
+  padding: 13px;
+  position: absolute;
+  bottom: 0;  
+  width: 100%;
+}
