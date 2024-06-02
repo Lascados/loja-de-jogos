@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lascado's Games Store</title>
+    <link rel="shortcut icon" href="src/imagens/Lascado Games Logo.png" type="image/lascadosgames" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/fontes.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tudo">
+        <header class="cabecalho">
+            <div class="logo">
+                <hr />
+                <img src="img/Lascado Games Logo.png" alt="Lascado's Games" />
+            </div>
+            <h1>Lascado's Game Store</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="carrinho.html">Carrinho (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="slides">
+            <div class="slide active" style="background-image: url('img/1.png')"></div>
+            <div class="slide" style="background-image: url('img/2.png')"></div>
+            <div class="slide" style="background-image: url('img/3.png')"></div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </section>
+
+        <main>
+            <section class="catalogo">
+                <form action="#">
+                    <label for="genero">Gênero:</label>
+                    <select id="genero">
+                        <option value="">Todos</option>
+                        <option value="acao">Ação</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="indie">Indie</option>
+                        <option value="rpg">RPG</option>
+                        <option value="corrida">Corrida</option>
+                        <option value="luta">Luta</option>
+                    </select>
+                    <label for="plataforma">Plataforma:</label>
+                    <select id="plataforma">
+                        <option value="">Todas</option>
+                        <option value="ps4">PlayStation 4</option>
+                        <option value="ps5">PlayStation 5</option>
+                        <option value="xbox">Xbox Series X/S</option>
+                        <option value="pc">PC</option>
+                    </select>
+                    <label for="preco-min">Preço mínimo:</label>
+                    <input type="number" id="preco-min">
+                    <label for="preco-max">Preço máximo:</label>
+                    <input type="number" id="preco-max">
+                    <button type="submit">Filtrar</button>
+                </form>
+                <ul class="produtos"></ul>
+            </section>
+            
+            <section class="vendas">
+                <h2>Nossos Produtos:</h2>
+                <div class="produto" data-name="produto-1" data-price="199.90">
+                    <img src="img/jogo1.jpg" alt="produto 1">
+                    <h3>Grand Theft Auto V - PC</h3>
+                    <p>R$ 199,90</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-name="produto-2" data-price="249.90">
+                    <img src="img/jogo2.jpg" alt="produto 2">
+                    <h3>Minecraft - Xbox One</h3>
+                    <p>R$ 249,90</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-name="produto-3" data-price="299.90">
+                    <img src="img/jogo3.jpg" alt="produto 3">
+                    <h3>Undertale - Nintendo Switch</h3>
+                    <p>R$ 299,90</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-name="produto-4" data-price="399.90">
+                    <img src="img/jogo4.png" alt="produto 4">
+                    <h3>Spiderman - PS5</h3>
+                    <p>R$ 399,90</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-name="produto-5" data-price="2499.90">
+                    <img src="img/xbox.png" alt="Console Xbox">
+                    <h3>Xbox One Series X - 1TB</h3>
+                    <p>R$ 2.499,90</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto" data-name="produto-6" data-price="4299.90">
+                    <img src="img/ps5.png" alt="Console PS5">
+                    <h3>Playstation 5 - 500GB</h3>
+                    <p>R$ 4.299,90</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Lascado's Store</p>
+    </footer>
+
+    <script src="src/js/index.js"></script>
+    <script src="script.js"></script>
+    <script src="redirecao.js"></script>
+</body>
+</html>

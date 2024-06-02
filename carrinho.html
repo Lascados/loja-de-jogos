@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <hr />
+            <img src="img/Lascado Games Logo.png" alt="Lascado's Games" />
+        </div>
+        <h1>Lascado's Game Store</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carrinho.html">Carrinho (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Carrinho de Compras</h2>
+        <div id="cart-items"></div>
+        <p>Total: <span id="cart-total">R$ 0,00</span></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lascado's Game Store. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
